@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+div:nth-child(2) {
+    background-color: rgba(255,255,255,0.2);
+    width: 500px;
+    margin: 100px 700px;
+    border-radius: 10px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+}
+div:nth-child(2) form {
+    margin: auto 60px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div:nth-child(2) form table {}
+
+div:nth-child(2) form table tr {}
+
+div:nth-child(2) form table tr td {}
+
+div:nth-child(2) form table tr td .e_mail {
+    padding: 10px;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 10px;
+    color: #000000;
+}
+
+div:nth-child(2) form table tr td .pass_word {
+    padding: 10px;
+    width: 300px;
+    background: transparent;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+div:nth-child(2) form table tr td .confirm_password {
+    padding: 10px;
+    width: 300px;
+    background: transparent;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 10px;
+}

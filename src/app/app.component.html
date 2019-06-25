@@ -1,0 +1,44 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+</div>
+
+<div style = "text-align: center;justify-content: center;">
+  <form [formGroup] = "logInForm">
+    <table>
+      <tr>
+        <td><input placeholder = "Email" class = "e_mail" formControlName = "eMail" [(ngModel)] = "eMail"/></td>
+      </tr>
+
+      <tr>
+        <td><input placeholder = "Password" class = "pass_word" formControlName = "passWord" [(ngModel)] = "passWord" required/></td>
+      </tr>
+
+      <tr>
+        <td><input placeholder = "Confirm Password" class = "confirm_password" formControlName = "confirmPassword" [(ngModel)] = "confirmPassword"/></td>
+      </tr>
+
+      <tr>
+        <td> <button mat-raised-button color="primary" [disabled] = "!(logInForm.valid && confirmPassword == passWord)" >Submit</button></td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+<div style = "margin-top: 20px;text-align: center;">
+  <span *ngIf = "!logInForm.valid" style = "background-color: rgba(255,255,255,1);padding: 10px;
+  border-radius: 5px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;width: 100px;">
+  Your password must contain lowercase and uppercase letters,must be at least 8 characters in length, must contain numbers and special characters(e.g !#$)
+  </span>
+</div>
+
+<div style = "margin-top: 30px;text-align: center;">
+  <span *ngIf = "confirmPassword != passWord" style = "background-color: rgba(255,255,255,1);padding: 10px;
+  border-radius: 5px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;width: 100px;">
+    Your password do not match!
+  </span>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: url(assets/architecture-body-of-water-buildings-2255985.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
