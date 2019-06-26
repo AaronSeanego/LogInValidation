@@ -4,7 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {MatButtonModule} from '@angular/material';
-import { FormsModule,ReactiveFormsModule, FormBuilder} from '@angular/forms';
+import { FormsModule,ReactiveFormsModule, FormBuilder,FormControl} from '@angular/forms';
 
 @NgModule({
   declarations: [

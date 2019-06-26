@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import { FormBuilder, Validators, FormGroup, FormControl } from '@angular/forms';
 import { equal } from 'assert';
 
 @Component({
@@ -8,7 +8,7 @@ import { equal } from 'assert';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'LogInValidation';
+  title = 'Log In Validation';
   passWord;
   confirmPassword:string;
   logInForm: FormGroup;

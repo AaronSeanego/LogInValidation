@@ -1,49 +1,169 @@
 @charset "UTF-8";
 
+header {
+    padding: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.1);
+    position: relative;
+    background: inherit;
+    z-index: 1;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    background: inherit;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: inset 0 0 2000px 2000px rgba(255,255,255,.4);
+    filter: blur(20px);
+    margin: -20px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    width: 180px;
+    border-radius: 5px;
+    transition: 0.4s;
+    margin-left: 10px;
+}
+
+header ul li:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+header ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+header ul li a:hover {
+    color: white;
+}
+
+div:nth-child(2) h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-seri;
+    color:black;
+}
+
 div:nth-child(2) {
-    background-color: rgba(255,255,255,0.2);
     width: 500px;
     margin: 100px 700px;
-    border-radius: 10px;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+    border-radius: 40px;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
+    position: relative;
+    background: inherit;
+    z-index: 1;
+    overflow: hidden;
 }
-div:nth-child(2) form {
+
+div:nth-child(2)::before {
+    content: "";
+    background: inherit;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: inset 0 0 2000px 2000px rgba(255,255,255,.4);
+    filter: blur(15px);
+    margin: -20px;
+}
+
+div:nth-child(3) {
+    /*background-color: rgba(255,255,255,0.3);*/
+    width: 500px;
+    margin: 80px 700px;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
+    position: relative;
+    background: inherit;
+    z-index: 1;
+    overflow: hidden;
+}
+
+div:nth-child(3)::before {
+    content: "";
+    background: inherit;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: inset 0 0 2000px 2000px rgba(255,255,255,.4);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+div:nth-child(3) form {
     margin: auto 60px;
     padding: 20px;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-div:nth-child(2) form table {}
+div:nth-child(3) form table {}
 
-div:nth-child(2) form table tr {}
+div:nth-child(3) form table tr {}
 
-div:nth-child(2) form table tr td {}
+div:nth-child(3) form table tr td {}
 
-div:nth-child(2) form table tr td .e_mail {
+div:nth-child(3) form table tr td .e_mail {
     padding: 10px;
     width: 300px;
     background: rgba(255,255,255,0.1);
-    border: 1px solid #000000;
+    border: 1px solid black;
     border-radius: 5px;
     margin: 10px;
-    color: #000000;
+    color: black;
 }
 
-div:nth-child(2) form table tr td .pass_word {
+div:nth-child(3) form table tr td .e_mail.ng-invalid {
+    border: 1px solid red;
+}
+
+div:nth-child(3) form table tr td .e_mail.active {
+    border-color: greenyellow;
+}
+
+div:nth-child(3) form table tr td .pass_word {
     padding: 10px;
     width: 300px;
     background: transparent;
-    border: 1px solid #000000;
+    border: 1px solid black;
     border-radius: 5px;
     margin: 10px;
+    color: black;
 }
 
-div:nth-child(2) form table tr td .confirm_password {
+div:nth-child(3) form table tr td .confirm_password {
     padding: 10px;
     width: 300px;
     background: transparent;
-    border: 1px solid #000000;
+    border: 1px solid black;
     border-radius: 5px;
     margin: 10px;
+    color: black;
 }
+
+div:nth-child(3) form table tr td button:disabled {
+    background-color: rgba(0,0,0,0.4);
+    color: rgba(255,255,255,0.3);
+}
+
+/*div:nth-child(3) form table tr td button:enabled {
+    background-color: lime;
+}*/
